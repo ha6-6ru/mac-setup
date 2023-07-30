@@ -1,0 +1,11 @@
+defaults write com.apple.finder AppleShowAllFiles TRUE
+softwareupdate --install-rosetta
+
+# Flutter
+fvm install 3.10.6
+fvm global 3.10.6
+flutter doctor --android-licenses
+
+# Java
+curl -s "https://get.sdkman.io" | bash
+sdk install 17.0.7-ms
